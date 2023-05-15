@@ -1,0 +1,260 @@
+  <div class="contenedor_principal flex">
+    <aside class="w-[154px] bg-[#1c212c] h-auto flex flex-col items-center pt-5 pb-2 space-y-7 text-white">
+      <div id="gc" class="text-[45px] mt-[52.75]">
+        <p>GC</p>
+      </div>
+      <div id="quorum" class="text-[11px]">
+        <p>QUORUM</p>
+        <div></div>
+      </div>
+      <div id="logout" class="text-white fixed bottom-4">
+        <i class="fa-solid fa-arrow-right-from-bracket text-xl" style="color: #ffffff;"></i>
+      </div>
+    </aside>
+    <div>
+      <!-- Columna Central y Columna de Asistentes -->
+      <div class="columnaCentralYzonaAsistentes flex w-auto">
+        <!-- Columna Central -->
+        <div class="w-auto px-[58px] pt-[61px]">
+          <!-- Hero -->
+          <div class="h-[97px] bg-[#FBFBFB] border-2 border-[#CFCFCF] rounded-md flex justify-between p-[20px]">
+            <div class="text-[#545454] text-[17px]">
+              <p class="font-bold">ASAMBLEA GENERAL DE ACCIONISTAS</p>
+              <p class="">Garantías comunitarias</p>
+            </div>
+            <div>
+              <p>Logo GC</p>
+            </div>
+          </div>
+          <!-- Pregunta -->
+          <div class="mt-[52px] space-y-[12px]">
+            <p class="text-[32px]">1. De elecciones y Escrutinios</p>
+            <p class="text-[#888888] text-[15px]">La administración propone a la honorable asamblea la comisión de
+              elecciones y escrutinios a los Doctores <span class="font-bold">Felipe Rojas Toro</span> y <span
+                class="font-bold">Gustavo Cano</span> se solicita amablemente emitan el voto de aprobación o no
+              aprobación a
+              través de la plataforma virtual.</p>
+          </div>
+          <!-- Selecciona una opción -->
+          <div class="flex justify-between mt-[66px] font-bold">
+            <p>Selecciona una opción</p>
+            <div class="space-y-1.5 w-[536px]">
+              <p class="text-xs text-[#CFCFCF] text-right uppercase">Total de votaciones</p>
+              <div class="flex justify-end items-center w-full">
+                <hr class="w-[80%] border-2 border-[#85754e] rounded-md">
+                <hr class="w-[20%] border-2">
+                <p class="text-black text-xs font-bold ml-2">80%(28/31)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Opciones -->
+          <div class="flex justify-between">
+            <!-- Col Izq|Der Votaciones-->
+            <div class="grid grid-rows-4 grid-flow-col gap-4 w-full mt-6 font-medium">
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 1</p>
+                <p>10 votos (5%)</p>
+                <div class="row">
+                  <p>Circular Progress bar</p>
+                </div>
+                <br />
+                
+                <div class="row" *ngIf="!completed">
+                  <p>
+                    <span> <circulo-progreso [progress]="progress"></circulo-progreso></span>
+                    {{ progress }} %
+                  </p>
+                </div>
+                <br />
+                
+                <div class="row" *ngIf="completed">Progress completed</div>
+              </div>
+              <div class="flex justify-between border-2 border-[#85754E] rounded-md p-5 mt-2 text-[#85754E]">
+                <div class="flex justify-center items-center">
+                  <i class="fa-solid fa-check fa-lg mr-4" style="color: #85754e;"></i>
+                  <p>opción 2</p>
+                </div>
+                <p>10 votos (5%)</p>
+              </div>
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 3</p>
+                <p>10 votos (5%)</p>
+              </div>
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 4</p>
+                <p>10 votos (5%)</p>
+              </div>
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 5</p>
+                <p>10 votos (5%)</p>
+              </div>
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 6</p>
+                <p>10 votos (5%)</p>
+              </div>
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 7</p>
+                <p>10 votos (5%)</p>
+              </div>
+              <div class="flex justify-between border-2 border-[#F2F2F2] rounded-md p-5 mt-2">
+                <p>opción 8</p>
+                <p>10 votos (5%)</p>
+              </div>
+            </div>
+          </div>
+          <!-- btn emitir votación -->
+          <div>
+            <button class="rounded-md bg-[#16151E] w-[289px] h-[55px] flex justify-center items-center gap-4 mx-2 mt-4"
+              type="submit">
+              <p class="text-white">Emitir votación</p>
+            </button>
+          </div>
+        </div>
+        <!-- Asistentes -->
+        <div class="w-[535px] bg-[#F5F5F5] h-screen">
+          <!-- Fotos Perfil -->
+          <div class="mx-7 mt-14">
+            <div class="flex">
+              <div class="w-full h-full">
+                <img
+                  class="w-[104px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-tl-xl bg-auto bg-no-repeat bg-center">
+              </div>
+              <div class="w-full h-full">
+                <img class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-auto bg-no-repeat bg-center">
+              </div>
+              <div class="w-full h-full">
+                <img class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-auto bg-no-repeat bg-center">
+              </div>
+              <div class="w-full h-full">
+                <img
+                  class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-tr-xl bg-auto bg-no-repeat bg-center">
+              </div>
+            </div>
+            <div class="flex">
+              <div class="w-full h-full">
+                <img
+                  class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-bl-xl bg-auto bg-no-repeat bg-center">
+              </div>
+              <div class="w-full h-full">
+                <img class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-auto bg-no-repeat bg-center">
+              </div>
+              <div class="w-full h-full">
+                <img class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-auto bg-no-repeat bg-center">
+              </div>
+              <div class="w-full h-full">
+                <img
+                  class="w-[104px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-br-xl bg-auto bg-no-repeat bg-center">
+              </div>
+            </div>
+          </div>
+          <!-- Icono Opciones -->
+          <div class="flex justify-center gap-x-2 mt-4">
+            <div class="rounded-lg w-[97px] h-[46px] bg-[#85754E] flex justify-center items-center">
+              <i class="fa-solid fa-users fa-lg" style="color: #ffffff;"></i>
+            </div>
+            <div class="rounded-lg w-[97px] h-[46px] bg-white flex justify-center items-center">
+              <i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i>
+            </div>
+            <div class="rounded-lg w-[97px] h-[46px] bg-white flex justify-center items-center">
+              <i class="fa-solid fa-file-lines fa-lg" style="color: #000000;"></i>
+            </div>
+            <div class="rounded-lg w-[97px] h-[46px] bg-[#F93245] flex justify-center items-center">
+              <i class="fa-solid fa-power-off fa-lg" style="color: #ffffff;"></i>
+            </div>
+          </div>
+          <!-- Selección Asistentes -->
+          <div class="mt-8 mx-7">
+            <h4 class="text-[#545454] font-bold">Asistentes</h4>
+            <div
+              class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]">
+              <i class="fa-solid fa-user fa-lg" style="color: #44a18f;"></i>
+              <p class="ml-4 font-bold text-[#171717]">Andrés Ospina</p>
+            </div>
+            <div
+              class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]">
+              <i class="fa-solid fa-user-group" style="color: #cfcfcf;"></i>
+              <p class="ml-4 font-bold text-[#171717]">Sebastián Corrales</p>
+            </div>
+            <div
+              class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]">
+              <i class="fa-solid fa-user fa-lg" style="color: #44a18f;"></i>
+              <p class="ml-4 font-bold text-[#171717]">Alejandra Botero</p>
+            </div>
+            <div
+              class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]">
+              <i class="fa-solid fa-user fa-lg" style="color: #44a18f;"></i>
+              <p class="ml-4 font-bold text-[#171717]">Dayana Orrego</p>
+            </div>
+            <div
+              class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]">
+              <i class="fa-solid fa-user fa-lg" style="color: #44a18f;"></i>
+              <p class="ml-4 font-bold text-[#171717]">Dayana Orrego</p>
+            </div>
+            <!-- btn agregar personas -->
+            <div>
+              <button
+                class="rounded-md bg-[#16151E] w-[472.29px] h-[61.04px] flex justify-center items-center gap-4 mx-2 mt-4"
+                type="submit">
+                <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                <p class="text-white">Agregar personas</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contenedor inferior Siguiente/Anterior -->
+      <!-- Preunta pendiente -->
+      <div class="w-full h-[154px] bg-white border border-[#CFCFCF]">
+        <div>
+          <div
+            class="border w-[341px] h-[45px] text-[13px] flex justify-center items-center ml-[230px] mt-[-10px] bg-white rounded-md border-[#CFCFCF]">
+            <p class="text-[#545454]">Tienes preguntas pendientes por contestar.</p>
+          </div>
+        </div>
+        <div class="-mb-2">
+          <p class="text-[15px] font-regular text-center">1. De elecciones y Escrutinios</p>
+        </div>
+        <div class="flex justify-center mt-2">
+            <!-- btn Anteior -->
+            <div class="w-[80%] flex justify-between">
+              <button class="flex justify-center items-center border border-[#CFCFCf] w-[110px] h-[38px] gap-2 rounded-md">
+                <i class="fa-solid fa-chevron-left text-[12px]" style="color: #cfcfcf;"></i>
+                <p class="text-[12px] text-[#CFCFCF] font-medium">Anterior</p>
+                <div class="relative">
+                  <!-- led ping -->
+                  <span class="flex h-2 w-2">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#44A18F] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#44A18F]"></span>
+                  </span>
+                </div>
+              </button>
+              <!-- Lines de tiempo -->
+              <div class="flex items-center gap-2">
+                <hr class="border-2 border-[#85754E] w-[138px] rounded-md">
+                <hr class="border-2 border-[#85754E] w-[138px] rounded-md">
+                <hr class="border-2 border-[#E8C2C5] w-[138px] rounded-md">
+                <hr class="border-2 border-[#E8C2C5] w-[138px] rounded-md">
+                    <!-- Icon Plus -->
+                    <i class="fa-solid fa-circle-plus fa-2xl" style="color: #857526;"></i>
+
+                <hr class="border-2 border-[#CFCFCF] w-[138px] rounded-md">
+                <hr class="border-2 border-[#CFCFCF] w-[138px] rounded-md">
+                <hr class="border-2 border-[#CFCFCF] w-[138px] rounded-md">
+                <hr class="border-2 border-[#CFCFCF] w-[138px] rounded-md">
+              </div>
+              <!-- btn Siguiente -->
+              <button class="flex justify-center items-center border border-[#CFCFCf] w-[110px] h-[38px] gap-2 rounded-md">
+                <p class="text-[12px] text-[#CFCFCF] font-medium">Siguiente</p>
+                <i class="fa-solid fa-chevron-right text-[12px]" style="color: #cfcfcf;"></i>
+              </button>
+            </div>
+        </div>
+        <!-- Agregar pregunta -->
+        <div class="flex justify-center -ml-[24%] -mt-[10px]">
+          <div class="border w-[189px] h-[33px] text-[13px] flex justify-center items-center ml-[230px] bg-white rounded-md border-[#CFCFCF]">
+            <p class="text-[#545454]">Agregar pregunta</p>
+          </div>
+        </div>
+      </div>
+    </div>
