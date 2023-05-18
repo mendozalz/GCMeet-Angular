@@ -1,7 +1,7 @@
-<mat-sidenav-container class="example-container" autosize>
+<mat-sidenav-container class="example-container" [ngClass]="{'example-container': estiloActivo, 'container': !estiloActivo}">
   <mat-sidenav #sidenav [mode]="mode.value || 'over'">
     <aside
-      class="w-[154px] h-full bg-[#1c212c] h-auto flex flex-col items-center pt-5 pb-2 space-y-7 text-white tablet:hidden"
+      class="w-full h-full bg-[#1c212c] flex flex-col items-center pt-5 pb-2 space-y-7 text-white"
     >
       <div id="gc" class="text-[45px] mt-[52.75]">
         <p>GC</p>
@@ -13,15 +13,15 @@
       <div id="logout" class="text-white fixed bottom-4">
         <i
           class="fa-solid fa-arrow-right-from-bracket text-xl"
-          style="color: #d36464"
+          style="color: #ffffff"
         ></i>
       </div>
     </aside>
   </mat-sidenav>
-
+  
   <mat-sidenav-content>
-    <button mat-button (click)="sidenav.toggle()">
-        <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"  (click)="visible()"></i>
+    <button [ngStyle]="styleBtn" (click)="visible(); sidenav.toggle()">
+        <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
     </button>
   </mat-sidenav-content>
 </mat-sidenav-container>

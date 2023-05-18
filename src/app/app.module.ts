@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { CirculoProgresoComponent } from './circulo-progreso/circulo-progreso.component';
@@ -14,6 +13,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidenavModeExample } from './side-bar/side-bar.component';
+import { SidebarDesktopComponent } from './sidebar-desktop/sidebar-desktop.component';
+import { SidebarRightComponent } from './sidebar-right/sidebar-right.component';
+
 
 
 
@@ -23,7 +25,9 @@ import { SidenavModeExample } from './side-bar/side-bar.component';
     CirculoProgresoComponent,
     SelecionOpcionComponent,
     /* SideBarComponent */
-    SidenavModeExample
+    SidenavModeExample,
+    SidebarDesktopComponent,
+    SidebarRightComponent,
   ],
   imports: [
     BrowserModule,

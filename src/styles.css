@@ -16,15 +16,15 @@
 
 }
 
-
-
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/**SideBar**/
+/* aside menu desplegable movil - codigo en los estilo generales de la web*/
 
-.mat-drawer-container.mat-sidenav-container.example-container {
-padding: 6px 15px;
-background-color: transparent;
+.mat-drawer-transition .mat-drawer-backdrop {
+  position: fixed;
+}
+
+.mat-drawer.mat-sidenav.ng-tns-c3297556376-0.ng-trigger.ng-trigger-transform.mat-drawer-over.ng-star-inserted.mat-drawer-opened {
+	position: fixed;
 }

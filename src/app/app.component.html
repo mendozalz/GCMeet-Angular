@@ -1,7 +1,8 @@
 <!-- sideBar -->
 <div class="contenedor_principal flex">
   <side-bar/>
-  <div class="w-full">
+  <sidebar-desktop class="tablet:hidden"/>
+  <div class="w-full movil:pt-8">
     <!-- Columna Central y Columna de Asistentes -->
     <div class="columnaCentralYzonaAsistentes flex w-auto">
       <!-- Columna Central -->
@@ -72,106 +73,106 @@
         </div>
       </div>
       <!-- Asistentes -->
-      <div class="w-[535px] bg-[#F5F5F5] h-screen tablet:hidden">
+      <div class="px-8 w-[535px] bg-[#F5F5F5] h-screen tablet:hidden">
         <!-- Fotos Perfil -->
-        <div class="mx-7 mt-14">
+        <div class="mt-14">
           <div class="flex">
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-tl-xl bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-tl-xl bg-cover bg-no-repeat bg-center"
               />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-cover bg-no-repeat bg-center"
               />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-cover bg-no-repeat bg-center"
               />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-tr-xl bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-tr-xl bg-cover bg-no-repeat bg-center"
               />
             </div>
           </div>
           <div class="flex">
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-bl-xl bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-bl-xl bg-cover bg-no-repeat bg-center"
               />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-cover bg-no-repeat bg-center"
               />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-cover bg-no-repeat bg-center"
               />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[104px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-br-xl bg-auto bg-no-repeat bg-center"
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-br-xl bg-cover bg-no-repeat bg-center"
               />
             </div>
           </div>
         </div>
         <!-- Icono Opciones -->
-        <div class="flex justify-center gap-x-2 mt-4">
+        <div class=" flex justify-center gap-x-2 mt-4">
           <div
-            class="rounded-lg w-[97px] h-[46px] bg-[#85754E] flex justify-center items-center"
+            class="rounded-lg w-[112px] h-[55px] bg-[#85754E] flex justify-center items-center"
           >
             <i class="fa-solid fa-users fa-lg" style="color: #ffffff"></i>
           </div>
           <div
-            class="rounded-lg w-[97px] h-[46px] bg-white flex justify-center items-center"
+            class="rounded-lg w-[112px] h-[55px] bg-white flex justify-center items-center"
           >
             <i class="fa-solid fa-bars fa-lg" style="color: #000000"></i>
           </div>
           <div
-            class="rounded-lg w-[97px] h-[46px] bg-white flex justify-center items-center"
+            class="rounded-lg w-[112px] h-[55px] bg-white flex justify-center items-center"
           >
             <i class="fa-solid fa-file-lines fa-lg" style="color: #000000"></i>
           </div>
           <div
-            class="rounded-lg w-[97px] h-[46px] bg-[#F93245] flex justify-center items-center"
+            class="rounded-lg w-[112px] h-[55px] bg-[#F93245] flex justify-center items-center"
           >
             <i class="fa-solid fa-power-off fa-lg" style="color: #ffffff"></i>
           </div>
         </div>
         <!-- Selección Asistentes -->
-        <div class="mt-8 mx-7">
-          <h4 class="text-[#545454] font-bold">Asistentes</h4>
+        <div>
+          <h4 class="mt-4 text-[#545454] font-bold">Asistentes</h4>
           <div
-            class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
+            class="flex items-center w-full h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
           >
             <i class="fa-solid fa-user fa-lg" style="color: #44a18f"></i>
             <p class="ml-4 font-bold text-[#171717]">Andrés Ospina</p>
           </div>
           <div
-            class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
+            class="flex items-center w-full h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
           >
             <i class="fa-solid fa-user-group" style="color: #cfcfcf"></i>
             <p class="ml-4 font-bold text-[#171717]">Sebastián Corrales</p>
           </div>
           <div
-            class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
+            class="flex items-center w-full h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
           >
             <i class="fa-solid fa-user fa-lg" style="color: #44a18f"></i>
             <p class="ml-4 font-bold text-[#171717]">Alejandra Botero</p>
           </div>
           <div
-            class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
+            class="flex items-center w-full h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
           >
             <i class="fa-solid fa-user fa-lg" style="color: #44a18f"></i>
             <p class="ml-4 font-bold text-[#171717]">Dayana Orrego</p>
           </div>
           <div
-            class="flex items-center w-[416px] h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
+            class="flex items-center w-full h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
           >
             <i class="fa-solid fa-user fa-lg" style="color: #44a18f"></i>
             <p class="ml-4 font-bold text-[#171717]">Dayana Orrego</p>
@@ -179,7 +180,7 @@
           <!-- btn agregar personas -->
           <div>
             <button
-              class="rounded-md bg-[#16151E] w-[472.29px] h-[61.04px] flex justify-center items-center gap-4 mx-2 mt-4"
+              class="rounded-md bg-[#16151E] w-full h-[61.04px] flex justify-center items-center gap-4 mt-4"
               type="submit"
             >
               <i class="fa-solid fa-user-plus" style="color: #ffffff"></i>
@@ -268,4 +269,5 @@
       </div>
     </div>
   </div>
+  <sidebar-right class="hidden tablet:block"/>
 </div>
