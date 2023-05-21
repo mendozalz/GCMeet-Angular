@@ -13,7 +13,7 @@
     "@angular/animations": "^16.0.0",
     "@angular/cdk": "^16.0.1",
     "@angular/common": "^16.0.0",
-    "@angular/compiler": "^16.0.0",
+    "@angular/compiler": "^16.0.2",
     "@angular/core": "^16.0.0",
     "@angular/forms": "^16.0.0",
     "@angular/localize": "^16.0.0",
@@ -35,9 +35,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.1",
-    "@angular/cli": "~16.0.1",
-    "@angular/compiler-cli": "^16.0.0",
+    "@angular-devkit/build-angular": "~16.0.1",
     "@types/jasmine": "~4.3.0",
     "autoprefixer": "^10.4.14",
     "jasmine-core": "~4.6.0",
