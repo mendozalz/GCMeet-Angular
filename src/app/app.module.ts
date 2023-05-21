@@ -15,8 +15,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progreso.module';
 import { CirculoprogresoNavbarModule } from './progress/circuloprogreso-navbar/circuloprogreso-navbar.module';
+import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progreso.module';
 
 
 
