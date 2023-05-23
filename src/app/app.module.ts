@@ -17,6 +17,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CirculoprogresoNavbarModule } from './progress/circuloprogreso-navbar/circuloprogreso-navbar.module';
 import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progreso.module';
+import { HorizontalProgressBarModule } from './progress/horizontal-progress-bar/horizontal-progress-bar.module';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
@@ -30,6 +32,8 @@ import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progr
     SidenavModeExample,
     SidebarDesktopComponent,
     SidebarRightComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -42,6 +46,8 @@ import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progr
     BrowserAnimationsModule,
     CirculoProgresoModule,
     CirculoprogresoNavbarModule,
+    HorizontalProgressBarModule,
+    MatProgressBarModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -28,3 +28,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-drawer.mat-sidenav.ng-tns-c3297556376-0.ng-trigger.ng-trigger-transform.mat-drawer-over.ng-star-inserted.mat-drawer-opened {
 	position: fixed;
 }
+
+ /* Barra de progreso */
+
+.mdc-linear-progress__bar-inner {
+  border-color: #85754E !important;
+}

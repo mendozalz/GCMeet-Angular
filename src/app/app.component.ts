@@ -1,8 +1,4 @@
-import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { HttpErrorResponse } from '@angular/common/http';
-import {FormControl} from '@angular/forms';
-import {MatDrawerMode} from '@angular/material/sidenav';
+import { Component} from '@angular/core';
 
 
 @Component({
@@ -11,5 +7,6 @@ import {MatDrawerMode} from '@angular/material/sidenav';
 })
 export class AppComponent {
 
+  hotizontalProgress = 65
   
 }

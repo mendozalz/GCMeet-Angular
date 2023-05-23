@@ -39,9 +39,9 @@
               Total de votaciones
             </p>
             <div class="flex justify-end items-center w-full">
-              <hr class="w-[80%] border-2 border-[#85754e] rounded-md" />
-              <hr class="w-[20%] border-2" />
-              <p class="text-black text-xs font-bold ml-2">80%(28/31)</p>
+              <mat-progress-bar class="rounded-md" mode="determinate" [value]="hotizontalProgress"></mat-progress-bar>
+              <horizontal-progress-bar />
+              <p class="text-black text-xs font-bold ml-2">{{hotizontalProgress}}%</p>
             </div>
           </div>
         </div>
