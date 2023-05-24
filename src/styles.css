@@ -34,3 +34,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mdc-linear-progress__bar-inner {
   border-color: #85754E !important;
 }
+
+.flex.items-center.justify-around.check path {
+	fill: #85754E;
+}
+
+/* Hover al elemento  de seleccion*/
+
+.svg-inline--fa.fa-check{
+  visibility: hidden;
+}
+.seleccion:hover .svg-inline--fa.fa-check{
+  visibility:visible
+}

@@ -1,10 +1,4 @@
 import { AppComponent } from './app.component';
-import { SelecionOpcionComponent } from './selecion-opcion/selecion-opcion.component';
-import { SidebarRightComponent } from './sidebar-right/sidebar-right.component';
-import { SidebarDesktopComponent } from './sidebar-desktop/sidebar-desktop.component';
-
-
-import { SidenavModeExample } from './side-bar/side-bar.component';
 
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,10 +9,14 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CirculoprogresoNavbarModule } from './progress/circuloprogreso-navbar/circuloprogreso-navbar.module';
-import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progreso.module';
-import { HorizontalProgressBarModule } from './progress/horizontal-progress-bar/horizontal-progress-bar.module';
+
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { HorizontalProgressBarModule } from './components/progress/horizontal-progress-bar/horizontal-progress-bar.module';
+import { CirculoprogresoNavbarModule } from './components/progress/circuloprogreso-navbar/circuloprogreso-navbar.module';
+import { CirculoProgresoModule } from './components/progress/circulo-progreso/circulo-progreso.module';
+import { ComponentsModule } from './components/components.module';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 
@@ -27,12 +25,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SelecionOpcionComponent,
-    SidenavModeExample,
-    SidebarDesktopComponent,
-    SidebarRightComponent,
-    
+    AppComponent,   
     
   ],
   imports: [
@@ -47,7 +40,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     CirculoProgresoModule,
     CirculoprogresoNavbarModule,
     HorizontalProgressBarModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    ComponentsModule,
+    AppRoutingModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,27 @@
+/*Asistentes*/
+.asistentes:focus .svg-inline--fa.fa-users.fa-lg {
+	color: #fff !important;
+}
+
+.asistentes.active{
+    background-color: #85754E;
+    color: #fff !important;
+}
+.asistentes.active .svg-inline--fa.fa-users.fa-lg{
+    color: #fff !important;
+}
+
+/*Adjuntos*/
+.adjuntos:focus .svg-inline--fa.fa-bars.fa-lg {
+	color: #fff !important;
+}
+
+/*Adjuntos*/
+.programacion:focus .svg-inline--fa.fa-file-lines.fa-lg {
+	color: #fff !important;
+}
+
+/*on-off*/
+.on-off:focus .svg-inline--fa.fa-power-off.fa-lg {
+	color: #F93245 !important;
+}

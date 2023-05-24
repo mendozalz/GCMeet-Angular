@@ -1,0 +1,14 @@
+<div class=" flex justify-center gap-x-2 mt-4">
+    <div routerLink="asistentes" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="asistentes rounded-lg w-[112px] h-[55px] bg-[#ffffff] focus:bg-[#85754E] flex justify-center items-center" [ngClass]="{'active': isActive}">
+        <i class='fa-solid fa-users fa-lg' style="color: #000"></i>
+    </div>
+    <div routerLink="adjuntos" routerLinkActive="active" class="adjuntos rounded-lg w-[112px] h-[55px] bg-white flex justify-center items-center focus:bg-[#85754E]">
+        <i class="fa-solid fa-bars fa-lg" style="color: #000"></i>
+    </div>
+    <div routerLink="programacion" routerLinkActive="active" class="programacion rounded-lg w-[112px] h-[55px] bg-white flex justify-center items-center focus:bg-[#85754E]">
+        <i class="fa-solid fa-file-lines fa-lg" style="color: #000"></i>
+    </div>
+    <div routerLink="#" routerLinkActive="active" class="on-off rounded-lg w-[112px] h-[55px] bg-[#F93245] flex justify-center items-center focus:bg-[#fff]">
+        <i class="fa-solid fa-power-off fa-lg" style="color: #fff"></i>
+    </div>
+</div>
