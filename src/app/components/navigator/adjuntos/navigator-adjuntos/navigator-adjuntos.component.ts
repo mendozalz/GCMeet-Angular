@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigator-adjuntos.component.css']
 })
 export class NavigatorAdjuntosComponent {
-
+  
 }

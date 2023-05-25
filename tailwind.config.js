@@ -9,6 +9,8 @@ module.exports = {
 
       'tablet': {'max': '1279px'},
       
+      'min-tablet': {'min': '1279px'},
+      
       'laptop': {'max': '1440px'},
 
     },

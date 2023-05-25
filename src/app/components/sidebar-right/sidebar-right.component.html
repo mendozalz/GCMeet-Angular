@@ -1,4 +1,4 @@
-<mat-sidenav-container class="example-containerR"
+<mat-sidenav-container class="example-containerR -mt-6 md:hidden"
   [ngClass]="{'example-container': estiloActivoR, 'container': !estiloActivoR}">
   <mat-sidenav #sidenav [mode]="mode.value || 'over'" position="end">
     <div class="px-4 w-full h-screen bg-[#F5F5F5]">
@@ -93,7 +93,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button [ngStyle]="styleBtnR" (click)="visibleR(); sidenav.toggle()">
+    <button [ngStyle]="styleBtnR" (click)="visibleR(); sidenav.toggle()" class="btn-right-movil">
       <i class="fa-solid fa-caret-left fa-2xl"></i>
     </button>
   </mat-sidenav-content>

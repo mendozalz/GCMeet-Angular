@@ -23,3 +23,11 @@
 .mat-drawer.mat-sidenav.ng-tns-c3297556376-1.ng-trigger.ng-trigger-transform.mat-drawer-end.mat-drawer-over.ng-star-inserted.mat-drawer-opened {
 	position: fixed;
 }
+button.btn-right-movil {
+	margin-top: -28px !important;
+}
+@media (min-width:767px){
+	button.btn-right-movil {
+		margin-top: 10px !important;
+	}	
+} 
