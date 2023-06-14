@@ -13,6 +13,9 @@ import { NavigatorProgramacionComponent } from './navigator/programacion/navigat
 import { NavigatorAsistentesComponent } from './navigator/asistentes/navigator-asistentes.component';
 import { NavigatorIconosComponent } from './navigator/navigator-iconos/navigator-iconos.component';
 import { RouterModule } from '@angular/router';
+import { FileUploadModule } from 'primeng/fileupload';
+import { ToastModule } from 'primeng/toast';
+import { VerticalProgressComponent } from './progress/vertical-progress/vertical-progress.component';
 
 
 
@@ -26,7 +29,9 @@ import { RouterModule } from '@angular/router';
     NavigatorAdjuntosComponent,
     NavigatorProgramacionComponent,
     NavigatorAsistentesComponent,
-    NavigatorIconosComponent
+    NavigatorIconosComponent,
+    VerticalProgressComponent,
+
   ],
   imports: [
     CommonModule,
@@ -34,7 +39,9 @@ import { RouterModule } from '@angular/router';
     CirculoprogresoNavbarModule,
     HorizontalProgressBarModule,
     MatSidenavModule,
-    RouterModule
+    RouterModule,
+    FileUploadModule,
+    ToastModule
   ],
   exports:[
     SidebarRightComponent,
