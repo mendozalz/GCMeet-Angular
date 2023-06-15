@@ -1,4 +1,4 @@
-<div class="mt-4 mb-4 h-[30vh]">
+<!-- <div class="mt-4 mb-4 h-[30vh]">
     <div class="wrapper p-4">
       <ol class="StepProgress">
         <li class="StepProgress-item done">
@@ -21,13 +21,42 @@
             <strong>Orden del día.pdf</strong>
           </li>
       </ol>
-    </div>
-    <!-- btn agregar personas -->
-  <div class="mb-[17%]">
+    </div> -->
+
+<!-- btn agregar personas -->
+<!-- <div class="mb-[17%]">
     <button
       class="rounded-md bg-[#16151E] w-[90%] h-[61.04px] flex justify-center items-center gap-4 mt-4 absolute bottom-[30px]"
       type="submit"
     >
+      <i class="fa-solid fa-user-plus" style="color: #ffffff"></i>
+      <p class="text-white">Agregar pregunta</p>
+    </button>
+  </div>
+</div>  -->
+
+<div class="mt-4 mb-4 h-[30vh]">
+  <div class="wrapper p-4">
+    <ol class="StepProgress">
+      <ng-container *ngFor="let step of steps; let i = index">
+        <li [ngClass]="{'StepProgress-item': true, 'done': isPreviousStepDone(i), 'current': isCurrentStep(i)}">
+          <strong>{{ step.label }}</strong>
+          <ng-container *ngIf="step.subSteps">
+            <ol>
+              <li *ngFor="let subStep of step.subSteps">
+                {{ subStep }}
+              </li>
+            </ol>
+          </ng-container>
+        </li>
+      </ng-container>
+    </ol>
+  </div>
+  <!-- btn agregar personas -->
+  <div class="mb-[17%]">
+    <button
+      class="rounded-md bg-[#16151E] w-[90%] h-[61.04px] flex justify-center items-center gap-4 mt-4 absolute bottom-[30px]"
+      type="submit">
       <i class="fa-solid fa-user-plus" style="color: #ffffff"></i>
       <p class="text-white">Agregar pregunta</p>
     </button>
