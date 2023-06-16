@@ -16,6 +16,9 @@ import { RouterModule } from '@angular/router';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ToastModule } from 'primeng/toast';
 import { VerticalProgressComponent } from './progress/vertical-progress/vertical-progress.component';
+import {MatButtonModule} from '@angular/material/button';
+import {NgIf} from '@angular/common';
+import { AgregarPersonasComponent } from './agregar-personas/agregar-personas.component';
 
 
 
@@ -31,6 +34,7 @@ import { VerticalProgressComponent } from './progress/vertical-progress/vertical
     NavigatorAsistentesComponent,
     NavigatorIconosComponent,
     VerticalProgressComponent,
+    AgregarPersonasComponent,
 
   ],
   imports: [
@@ -41,7 +45,9 @@ import { VerticalProgressComponent } from './progress/vertical-progress/vertical
     MatSidenavModule,
     RouterModule,
     FileUploadModule,
-    ToastModule
+    ToastModule,
+    MatButtonModule,
+    NgIf
   ],
   exports:[
     SidebarRightComponent,
@@ -51,7 +57,8 @@ import { VerticalProgressComponent } from './progress/vertical-progress/vertical
     NavigatorAdjuntosComponent,
     NavigatorProgramacionComponent,
     NavigatorAsistentesComponent,
-    NavigatorIconosComponent
+    NavigatorIconosComponent,
+    AgregarPersonasComponent,
   ]
 })
 export class ComponentsModule { }

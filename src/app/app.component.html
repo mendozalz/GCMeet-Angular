@@ -1,12 +1,12 @@
-<!-- sideBar -->
-<div class="contenedor_principal flex w-full">
+<!-- Left sideBar -->
+<div id="leftSideBar" class="contenedor_principal flex w-full">
   <side-bar />
   <sidebar-desktop class="tablet:hidden" />
   <div class="w-full movil:pt-8">
     <!-- Columna Central y Columna de Asistentes -->
-    <div class="columnaCentralYzonaAsistentes flex w-auto">
+    <div id="colmnaCentralAsistentes" class="columnaCentralYzonaAsistentes flex w-auto">
       <!-- Columna Central -->
-      <div class="w-full px-[58px] pt-[61px] laptop:px-[40px] tablet:px-[20px] movil:pt-[25px]">
+      <div id="columnaCentral" class="w-full px-[58px] pt-[61px] laptop:px-[40px] tablet:px-[20px] movil:pt-[25px]">
         <!-- Hero -->
         <div class="h-[97px] w-full bg-[#FBFBFB] border-2 border-[#CFCFCF] rounded-md flex justify-between p-[20px]">
           <div class="text-[#545454] text-[17px] movil:text-[12px]">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <!-- Pregunta -->
-        <div class="mt-[52px] space-y-[12px]">
+        <div id="pregunta" class="mt-[52px] space-y-[12px]">
           <p class="text-[32px] movil:text-[22px]">1. De elecciones y Escrutinios</p>
           <p class="text-[#888888] text-[15px] movil:text-[12px] movil:text-center movil:text-justify">
             La administración propone a la honorable asamblea la comisión de
@@ -30,7 +30,7 @@
           </p>
         </div>
         <!-- Selecciona una opción -->
-        <div class="flex justify-between mt-[66px] font-bold movil:block">
+        <div id="opciones" class="flex justify-between mt-[66px] font-bold movil:block">
           <p class="movil:text-[14px]">Selecciona una opción</p>
           <div class="space-y-1.5 w-[536px] movil:w-full movil:mt-2">
             <p class="text-xs text-[#CFCFCF] text-right uppercase">
@@ -46,7 +46,7 @@
         <!-- Opciones -->
         <div class="flex justify-between">
           <!-- Col Izq|Der Votaciones-->
-          <div class="grid grid-rows-4 grid-flow-col gap-4 w-full mt-6 font-medium movil:block">
+          <div id="columnaIzquierdaVotaciones" class="grid grid-rows-4 grid-flow-col gap-4 w-full mt-6 font-medium movil:block">
             <selecion-opcion />
             <selecion-opcion />
             <selecion-opcion />
@@ -58,7 +58,7 @@
           </div>
         </div>
         <!-- btn emitir votación -->
-        <div class="flex justify-start mb-6 tablet:mb-6">
+        <div id="btnVotacion" class="flex justify-start mb-6 tablet:mb-6">
           <button
             class="rounded-md bg-[#16151E] w-[289px] h-[55px] flex justify-center items-center gap-4 mx-2 mt-4 laptop:my-6"
             type="submit">
@@ -67,10 +67,11 @@
         </div>
       </div>
       <!-- Asistentes -->
-      <sidebar-right></sidebar-right>
+      
+      <sidebar-right id="sideBarRight" class="-ml-6 movil:-mt-8"/>
       <div class="px-8 w-[535px] laptop:w-[435px] h-[auto] bg-[#F5F5F5] tablet:hidden relative">
         <!-- Fotos Perfil -->
-        <div class="mt-14">
+        <div id="fotosPerfiles" class="mt-14">
           <div class="flex">
             <div class="w-full h-full">
               <img
@@ -112,7 +113,7 @@
 
         <!-- Selección Asistentes -->
         <!-- <navigator-asistentes/> -->
-        <router-outlet></router-outlet>
+        <router-outlet id="navigatorAsistentes"></router-outlet>
         <!-- -********- -->
       </div>
     </div>

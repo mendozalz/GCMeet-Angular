@@ -19,9 +19,5 @@ export class SidebarRightComponent {
     this.estiloActivoR = !this.estiloActivoR 
   }
 
-  styleBtnR ={
-    position:'fixed',
-    marginLeft: '-35px',
-    marginTop: '10px'
-  }
+
 }
