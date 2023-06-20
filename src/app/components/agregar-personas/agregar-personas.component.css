@@ -1,8 +1,8 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: -300px; /* El sidebar está oculto inicialmente */
-    width: 300px;
+    right: -684px; /* El sidebar está oculto inicialmente */
+    width: 684px;
     height: 100vh;
     background-color: #f2f2f2;
     transition: right 0.3s ease-in-out;

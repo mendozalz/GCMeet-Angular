@@ -1,5 +1,5 @@
 <!-- Selección Asistentes -->
-<div>
+<div #ocultarSideBar>
   <h4 class="mt-4 text-[#545454] font-bold">Asistentes</h4>
   <div
     class="flex items-center w-full h-[46px] mt-4 rounded-md px-4 bg-white shadow-[0px 3px 20px #00000008]"
@@ -34,7 +34,8 @@
   <!-- btn agregar personas -->
   <agregar-personas/>
   <div class="h-full mb-[17%]">
-    <button
+    <button 
+    id="btnAgregarPersonasPC"
       class="rounded-md bg-[#16151E] w-[90%] h-[61.04px] flex justify-center items-center gap-4 mt-4 absolute bottom-[30px]"
       type="button" (click)="toggleSidebar()"
     >

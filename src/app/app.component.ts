@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { ComunicacionServicio } from './components/comunicacion-servicio.service';
 
 
 @Component({
@@ -7,6 +8,11 @@ import { Component} from '@angular/core';
   styleUrls:["./app.component.css"]
 })
 export class AppComponent {
+
+  constructor(
+    private comunicacionServicio: ComunicacionServicio
+    ){}
+
 
   hotizontalProgress = 65
   

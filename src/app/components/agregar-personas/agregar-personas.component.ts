@@ -1,9 +1,6 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, ElementRef, OnDestroy, Renderer2, ViewChild } from '@angular/core';
 import { ComunicacionServicio } from '../comunicacion-servicio.service';
 import { Subscription } from 'rxjs';
-import {MatButtonModule} from '@angular/material/button';
-import {NgIf} from '@angular/common';
-import {MatSidenavModule} from '@angular/material/sidenav';
 
 @Component({
   selector: 'agregar-personas',
@@ -11,18 +8,28 @@ import {MatSidenavModule} from '@angular/material/sidenav';
   styleUrls: ['./agregar-personas.component.css'],
 })
 export class AgregarPersonasComponent implements OnDestroy{
+  @ViewChild('sidebar') sidebar:ElementRef;
+  
   mostrarSidebar: boolean;
   private subscription: Subscription;
 
-  constructor(private comunicacionServicio: ComunicacionServicio) {
+  constructor(
+    private comunicacionServicio: ComunicacionServicio,
+    private renderer2:Renderer2) {
     this.subscription = this.comunicacionServicio.mostrarSidebar$.subscribe(mostrar => {
       this.mostrarSidebar = mostrar;
     });
   }
 
+  ocultarSB(){
+    const ocultar = this.sidebar.nativeElement
+    this.renderer2.setStyle(ocultar, "display", "none")
+    this.comunicacionServicio.toggleSidebar();
+    
+  }
+
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-
 
 }

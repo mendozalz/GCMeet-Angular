@@ -1,4 +1,5 @@
-<div class="sidebar" [ngClass]="{ 'show': mostrarSidebar }">
+<div #sidebar (click)="ocultarSB()" class="sidebar z-1" [ngClass]="{ 'show': mostrarSidebar }">
     <!-- Contenido del sidebar -->
+    <h1>Hola Mundo</h1>
   </div>
   
