@@ -9,6 +9,7 @@ export class ComunicacionServicio {
   mostrarSidebar$ = this.mostrarSidebarSource.asObservable();
 
   toggleSidebar() {
-    this.mostrarSidebarSource.next(!this.mostrarSidebarSource.value);
+    const currentValue = this.mostrarSidebarSource.value
+    this.mostrarSidebarSource.next(!currentValue);
   }
 }

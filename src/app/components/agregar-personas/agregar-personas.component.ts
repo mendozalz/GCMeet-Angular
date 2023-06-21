@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, Renderer2, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { ComunicacionServicio } from '../comunicacion-servicio.service';
 import { Subscription } from 'rxjs';
 
@@ -7,29 +7,22 @@ import { Subscription } from 'rxjs';
   templateUrl: './agregar-personas.component.html',
   styleUrls: ['./agregar-personas.component.css'],
 })
-export class AgregarPersonasComponent implements OnDestroy{
-  @ViewChild('sidebar') sidebar:ElementRef;
+export class AgregarPersonasComponent{
   
   mostrarSidebar: boolean;
   private subscription: Subscription;
 
   constructor(
-    private comunicacionServicio: ComunicacionServicio,
-    private renderer2:Renderer2) {
+    private comunicacionServicio: ComunicacionServicio) {
     this.subscription = this.comunicacionServicio.mostrarSidebar$.subscribe(mostrar => {
       this.mostrarSidebar = mostrar;
     });
   }
 
-  ocultarSB(){
-    const ocultar = this.sidebar.nativeElement
-    this.renderer2.setStyle(ocultar, "display", "none")
+  toggleSidebar() {
     this.comunicacionServicio.toggleSidebar();
+    console.log("click toggleSidebar");
     
-  }
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
   }
 
 }

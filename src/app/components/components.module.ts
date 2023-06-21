@@ -19,6 +19,10 @@ import { VerticalProgressComponent } from './progress/vertical-progress/vertical
 import {MatButtonModule} from '@angular/material/button';
 import {NgIf} from '@angular/common';
 import { AgregarPersonasComponent } from './agregar-personas/agregar-personas.component';
+import { FilterAgregarPersonasPipe } from './filter-agregar-personas.pipe';
+import { BuscadorAgregarPersonasComponent } from './buscador-agregar-personas/buscador-agregar-personas.component';
+import { FormsModule } from '@angular/forms';
+import { ResaltadoBuscadorDirective } from './resaltado-buscador.directive';
 
 
 
@@ -35,6 +39,9 @@ import { AgregarPersonasComponent } from './agregar-personas/agregar-personas.co
     NavigatorIconosComponent,
     VerticalProgressComponent,
     AgregarPersonasComponent,
+    FilterAgregarPersonasPipe,
+    BuscadorAgregarPersonasComponent,
+    ResaltadoBuscadorDirective,
 
   ],
   imports: [
@@ -47,7 +54,8 @@ import { AgregarPersonasComponent } from './agregar-personas/agregar-personas.co
     FileUploadModule,
     ToastModule,
     MatButtonModule,
-    NgIf
+    NgIf,
+    FormsModule
   ],
   exports:[
     SidebarRightComponent,
@@ -59,6 +67,9 @@ import { AgregarPersonasComponent } from './agregar-personas/agregar-personas.co
     NavigatorAsistentesComponent,
     NavigatorIconosComponent,
     AgregarPersonasComponent,
+    FilterAgregarPersonasPipe,
+    BuscadorAgregarPersonasComponent,
+    ResaltadoBuscadorDirective
   ]
 })
 export class ComponentsModule { }

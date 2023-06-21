@@ -1,5 +1,15 @@
-<div #sidebar (click)="ocultarSB()" class="sidebar z-1" [ngClass]="{ 'show': mostrarSidebar }">
+<div #sidebar class="sidebar z-10 flex" [ngClass]="{ 'show': mostrarSidebar }">
     <!-- Contenido del sidebar -->
-    <h1>Hola Mundo</h1>
-  </div>
+    <!-- Content left -->
+    <div class="sideLeft h-full w-7/12">Left</div>
+    <!-- Content Right -->
+    <div class="sideRight h-full w-5/12 flex flex-col justify-start items-center">
+      <div class="ml-2 mt-2 cursor-pointer self-start" (click)="toggleSidebar()">
+        <i class="fa-solid fa-xmark fa-lg" style="color: #a7aebc;"></i>
+      </div>
+      <h2 class="self-start ml-[135px] md:ml-20 mt-20 mb-4 text-[#171717] font-semibold">INVITAR PERSONAS</h2>
+      <buscador-agregar-personas/>
+      <input>
+    </div>
+</div>
   
