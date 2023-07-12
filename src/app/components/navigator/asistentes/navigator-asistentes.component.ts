@@ -1,4 +1,4 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { ComunicacionServicio } from "../../comunicacion-servicio.service";
 
 
@@ -7,7 +7,7 @@ import { ComunicacionServicio } from "../../comunicacion-servicio.service";
   templateUrl: './navigator-asistentes.component.html',
   styleUrls: ['./navigator-asistentes.component.css'],
 })
-export class NavigatorAsistentesComponent implements OnInit {
+export class NavigatorAsistentesComponent /* implements OnInit */ {
    
   constructor(
     private comunicacionServicio: ComunicacionServicio
@@ -16,9 +16,7 @@ export class NavigatorAsistentesComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleSidebar() {
-    this.comunicacionServicio.toggleSidebar();
-    console.log("click toggleSidebar");
-    
+    this.comunicacionServicio.toggleSidebar();    
   }
   
 }

@@ -13,8 +13,6 @@ import { NavigatorProgramacionComponent } from './navigator/programacion/navigat
 import { NavigatorAsistentesComponent } from './navigator/asistentes/navigator-asistentes.component';
 import { NavigatorIconosComponent } from './navigator/navigator-iconos/navigator-iconos.component';
 import { RouterModule } from '@angular/router';
-import { FileUploadModule } from 'primeng/fileupload';
-import { ToastModule } from 'primeng/toast';
 import { VerticalProgressComponent } from './progress/vertical-progress/vertical-progress.component';
 import {MatButtonModule} from '@angular/material/button';
 import {NgIf} from '@angular/common';
@@ -23,6 +21,7 @@ import { FilterAgregarPersonasPipe } from './filter-agregar-personas.pipe';
 import { BuscadorAgregarPersonasComponent } from './buscador-agregar-personas/buscador-agregar-personas.component';
 import { FormsModule } from '@angular/forms';
 import { ResaltadoBuscadorDirective } from './resaltado-buscador.directive';
+import { CirculoProgresoComponent } from './progress/circulo-progreso/circulo-progreso.component';
 
 
 
@@ -51,8 +50,6 @@ import { ResaltadoBuscadorDirective } from './resaltado-buscador.directive';
     HorizontalProgressBarModule,
     MatSidenavModule,
     RouterModule,
-    FileUploadModule,
-    ToastModule,
     MatButtonModule,
     NgIf,
     FormsModule

@@ -38,8 +38,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    CirculoProgresoModule,
-    CirculoprogresoNavbarModule,
+/*     CirculoProgresoModule,
+    CirculoprogresoNavbarModule, */
     HorizontalProgressBarModule,
     MatProgressBarModule,
     ComponentsModule,
