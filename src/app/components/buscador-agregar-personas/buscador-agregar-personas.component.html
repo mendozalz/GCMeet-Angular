@@ -1,23 +1,36 @@
 <div class="content" role="main">
   <div class="card">
     <div class="form-group relative z-10">
-      <input class="buscador text-[14px]" type="email" class="form-control" id="search-text" aria-describedby="search-text" 
-      [(ngModel)]="searchText" placeholder="Buscar" 
-      autofocus>
+      <input class="buscador text-[14px]" type="email" class="form-control" id="search-text"
+        aria-describedby="search-text" [(ngModel)]="searchText" placeholder="Buscar" autofocus>
     </div>
     <i class="fa-solid fa-magnifying-glass fa-sm -mt-7 ml-4 z-40  absolute" style="color: #CFCFCF;"></i>
     <h6 class="text-[12px] text-[#171717] font-semibold mt-6 mb-4">Junta social</h6>
-      <div class="list-group list-group-flush flex flex-col items-center ">
-        <!-- Los resultados del ngFor es pasado a "filterAgregarPersonas" con el argumento de "searchText" -->
-        <buttom 
-        #focus
-        class="group btn-agregar-personas list-group-item w-[529px] h-[63px] bg-white flex justify-between items-center px-6 my-2" 
-        *ngFor="let c of nombres | filterAgregarPersonas: searchText"
-        [ngClass]="{'hidden': !c.match(searchText)}"
-        >
-        {{c}}
-        <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg</style><path class="group-active:fill-[#85754e] fill-[#ffffff]" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-        </buttom>
-      </div>
+    <div class="list-group list-group-flush flex flex-col items-center ">
+      <!-- Los resultados del ngFor es pasado a "filterAgregarPersonas" con el argumento de "searchText" -->
+      <button #focus
+        class="group btn-agregar-personas list-group-item w-[529px] h-[63px] bg-white flex justify-between items-center px-6 my-2"
+        *ngFor="let c of nombres | filterAgregarPersonas: searchText">
+        <div class="flex flex-col items-start gap-0">
+          {{c[0]}}
+          <small class="-mt-1 text-[12px] font-bold">{{c[1]}}</small>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+          viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <style>
+            svg
+          </style>
+          <path class="group-focus:fill-[#85754e] fill-[#ffffff]"
+            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+        </svg>
+      </button>
+    </div>
+    <!-- Convocados -->
+    <div class="flex flex-col items-center mt-[54px]">
+      <button
+        class="group btn-agregar-personas list-group-item w-[529px] h-[55px] bg-black flex justify-between items-center px-6 my-2 ">
+        <p class="text-center w-full text-white text-[13px]">Agregar convocados</p>
+      </button>
     </div>
   </div>
+</div>

@@ -1,0 +1,23 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* El sidebar está oculto inicialmente */
+    width: 100%;
+    height: 100vh;
+    transition: right 0.3s ease-in-out;
+  }
+  .sidebar.show {
+    right: 0; /* Muestra el sidebar desplazándolo hacia la derecha */
+  }
+  .sideLeft {
+    background-color: #fefefe;
+    opacity: 0.85;
+  }
+  .sideRight {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.6000000238418579px solid #e4e4e4;
+    -webkit-box-shadow: -2px 3px 5px 0px rgba(25,75,112,0.75);
+  -moz-box-shadow: -2px 3px 5px 0px rgba(25,75,112,0.75);
+  box-shadow: -2px 3px 5px 0px rgba(25,75,112,0.75);
+  }
+  

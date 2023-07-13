@@ -45,11 +45,12 @@
     </div>
 
     <!-- btn agregar personas -->
+    <cargar-archivos/>
   <div class="mb-[17%]">
     <button 
         id="btn-adjuntos"
       class="bg-[#16151E] w-[90%] h-[61.04px] flex justify-center items-center gap-4 mt-4 absolute bottom-[30px]"
-      type="submit"
+      type="submit" (click)="toggleSidebar()"
     >
     <i class="fa-regular fa-file-lines fa-lg" style="color: #ffffff;"></i>
       <p class="text-white">Agregar Archivos</p>

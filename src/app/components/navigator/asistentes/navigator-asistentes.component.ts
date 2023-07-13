@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ComunicacionServicio } from "../../comunicacion-servicio.service";
 
 
@@ -13,10 +13,12 @@ export class NavigatorAsistentesComponent /* implements OnInit */ {
     private comunicacionServicio: ComunicacionServicio
     ) {}
 
-  ngOnInit(): void {}
-
+  /* ngOnInit(): void {}
+ */
   toggleSidebar() {
     this.comunicacionServicio.toggleSidebar();    
+    console.log("click btn personas");
+    
   }
   
 }

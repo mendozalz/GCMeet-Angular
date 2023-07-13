@@ -1,13 +1,13 @@
-<div  class="sidebar z-10 flex" [ngClass]="{ 'show': mostrarSidebar }">
+<div class="sidebar z-10 flex" [ngClass]="{ 'show': mostrarSidebar }">
     <!-- Contenido del sidebar -->
     <!-- Content left -->
-    <div class="sideLeft h-full w-7/12"></div>
+    <div class="sideLeft h-full w-7/12">Left</div>
     <!-- Content Right -->
     <div class="sideRight h-full w-5/12 flex flex-col justify-start items-center shadow-[box-shadow: 0px 3px 30px #194B7014]">
       <div class="ml-2 mt-2 cursor-pointer self-start" (click)="toggleSidebar()">
         <i class="fa-solid fa-xmark fa-lg" style="color: #a7aebc;"></i>
       </div>
-      <h2 class="self-start ml-[135px] md:ml-20 mt-20 mb-4 text-[#171717] font-semibold tracking-[3.6px]">INVITAR PERSONAS</h2>
+      <h2 class="self-start ml-[135px] md:ml-20 mt-20 mb-4 text-[#171717] font-semibold tracking-[3.6px]">SELECCIONA LOS CONVOCADOS</h2>
       <buscador-agregar-personas/>
       <input>
     </div>

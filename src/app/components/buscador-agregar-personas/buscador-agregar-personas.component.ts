@@ -22,12 +22,12 @@ export class BuscadorAgregarPersonasComponent {
   title = 'angular-text-search-highlight';
   searchText = '';
   nombres = [
-    'Lenin Mendoza',
-    'Juan Camilo',
-    'Daniel Perez',
-    'Juan Tamayo',
-    'Sor Sanchez',
-    'Maristella Sanchez',
+    ['Lenin Mendoza', 'Red MM&C'],
+    ['Juan Camilo', 'Red Tecnología'],
+    ['Daniel Perez', 'Red MM&C'],
+    ['Juan Tamayo', 'Red MM&C'],
+    ['Sor Sanchez', 'Red NODO'],
+    ['Maristella Sanchez', 'Red MM&C']
   ];
 
 }

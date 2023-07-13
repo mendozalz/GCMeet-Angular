@@ -22,6 +22,7 @@ import { BuscadorAgregarPersonasComponent } from './buscador-agregar-personas/bu
 import { FormsModule } from '@angular/forms';
 import { ResaltadoBuscadorDirective } from './resaltado-buscador.directive';
 import { CirculoProgresoComponent } from './progress/circulo-progreso/circulo-progreso.component';
+import { CargarArchivosComponent } from './cargar-archivos/cargar-archivos.component';
 
 
 
@@ -41,6 +42,7 @@ import { CirculoProgresoComponent } from './progress/circulo-progreso/circulo-pr
     FilterAgregarPersonasPipe,
     BuscadorAgregarPersonasComponent,
     ResaltadoBuscadorDirective,
+    CargarArchivosComponent,
 
   ],
   imports: [
@@ -66,7 +68,8 @@ import { CirculoProgresoComponent } from './progress/circulo-progreso/circulo-pr
     AgregarPersonasComponent,
     FilterAgregarPersonasPipe,
     BuscadorAgregarPersonasComponent,
-    ResaltadoBuscadorDirective
+    ResaltadoBuscadorDirective,
+    CargarArchivosComponent
   ]
 })
 export class ComponentsModule { }
