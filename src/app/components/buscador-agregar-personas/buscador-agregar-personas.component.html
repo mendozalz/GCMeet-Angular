@@ -8,7 +8,7 @@
     <h6 class="text-[12px] text-[#171717] font-semibold mt-6 mb-4">Junta social</h6>
     <div class="list-group list-group-flush flex flex-col items-center ">
       <!-- Los resultados del ngFor es pasado a "filterAgregarPersonas" con el argumento de "searchText" -->
-      <button #focus
+      <button
         class="group btn-agregar-personas list-group-item w-[529px] h-[63px] bg-white flex justify-between items-center px-6 my-2"
         *ngFor="let c of nombres | filterAgregarPersonas: searchText">
         <div class="flex flex-col items-start gap-0">

@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { ResaltadoBuscadorDirective } from './resaltado-buscador.directive';
 import { CirculoProgresoComponent } from './progress/circulo-progreso/circulo-progreso.component';
 import { CargarArchivosComponent } from './cargar-archivos/cargar-archivos.component';
+import { ArchivosComponent } from './archivos/archivos.component';
 
 
 
@@ -43,6 +44,7 @@ import { CargarArchivosComponent } from './cargar-archivos/cargar-archivos.compo
     BuscadorAgregarPersonasComponent,
     ResaltadoBuscadorDirective,
     CargarArchivosComponent,
+    ArchivosComponent,
 
   ],
   imports: [
