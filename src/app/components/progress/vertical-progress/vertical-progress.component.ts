@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ComunicacionServicio } from '../../comunicacion-servicio.service';
 
 interface Step {
   label: string;
@@ -30,6 +31,17 @@ export class VerticalProgressComponent {
 
   isPreviousStepDone(index: number): boolean {
     return index < this.steps.length - 2;
+  }
+
+  constructor(
+    private comunicacionServicio: ComunicacionServicio
+    ) {}
+
+
+  toggleSidebarB() {
+    this.comunicacionServicio.toggleSidebarB();    
+    console.log("click btn preguntas");
+    
   }
 
 }

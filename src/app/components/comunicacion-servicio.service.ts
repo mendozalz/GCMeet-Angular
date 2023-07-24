@@ -14,10 +14,11 @@ export class ComunicacionServicio {
     console.log("Entro en servicios");
     
   }
-  toggleSidebarA() {
+  toggleSidebarB() {
     const currentValue = this.mostrarSidebarSource.value
     this.mostrarSidebarSource.next(!currentValue);
     console.log("Entro en servicios");
     
   }
+  
 }

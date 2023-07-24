@@ -24,7 +24,8 @@ import { ResaltadoBuscadorDirective } from './resaltado-buscador.directive';
 import { CirculoProgresoComponent } from './progress/circulo-progreso/circulo-progreso.component';
 import { CargarArchivosComponent } from './cargar-archivos/cargar-archivos.component';
 import { ArchivosComponent } from './archivos/archivos.component';
-
+import { PreguntasComponent } from './navigator/preguntas/preguntas.component';
+import { AgregarPreguntaComponent } from './agregar-pregunta/agregar-pregunta.component';
 
 
 
@@ -45,6 +46,8 @@ import { ArchivosComponent } from './archivos/archivos.component';
     ResaltadoBuscadorDirective,
     CargarArchivosComponent,
     ArchivosComponent,
+    PreguntasComponent,
+    AgregarPreguntaComponent,
 
   ],
   imports: [
@@ -71,7 +74,7 @@ import { ArchivosComponent } from './archivos/archivos.component';
     FilterAgregarPersonasPipe,
     BuscadorAgregarPersonasComponent,
     ResaltadoBuscadorDirective,
-    CargarArchivosComponent
+    AgregarPreguntaComponent,
   ]
 })
 export class ComponentsModule { }

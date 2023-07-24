@@ -1,0 +1,16 @@
+<div class="sidebar preguntas z-10 flex" [ngClass]="{ 'show': mostrarSidebar }">
+    <!-- Contenido del sidebar -->
+    <!-- Content left -->
+    <div class="sideLeft h-full w-7/12"></div>
+    <!-- Content Right -->
+    <div class="sideRight h-full w-5/12 flex flex-col justify-start items-center shadow-[box-shadow: 0px 3px 30px #194B7014]">
+      <div class="ml-2 mt-2 cursor-pointer self-start" (click)="toggleSidebarB()">
+        <i class="fa-solid fa-xmark fa-lg" style="color: #a7aebc;"></i>
+      </div>
+      <h2 class="self-start ml-[135px] md:ml-20 mt-20 mb-4 text-[#171717] font-semibold tracking-[3.6px]">SELECCIONA LOS CONVOCADOS</h2>
+      <div class="contenedor-carga w-[529px] h-[330px] border border-dashed border-2 bg-[url(./img/cloud.png)] bg-[center_top_3.5rem] bg-no-repeat bg-[length:80px_80px] flex justify-center items-center bg-[#f8f8f8]">
+        <p class="font-semibold mt-12">Guardar Pregunta</p>
+      </div>
+    </div>
+</div>
+  
