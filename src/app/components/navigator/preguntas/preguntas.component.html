@@ -1,16 +1,69 @@
 <div class="sidebar preguntas z-10 flex" [ngClass]="{ 'show': mostrarSidebar }">
     <!-- Contenido del sidebar -->
     <!-- Content left -->
-    <div class="sideLeft h-full w-7/12"></div>
+    <div class="sideLeft h-full w-5/12"></div>
     <!-- Content Right -->
-    <div class="sideRight h-full w-5/12 flex flex-col justify-start items-center shadow-[box-shadow: 0px 3px 30px #194B7014]">
+    <div class="sideRight h-full w-7/12 flex flex-col justify-start items-center shadow-[box-shadow: 0px 3px 30px #194B7014]">
       <div class="ml-2 mt-2 cursor-pointer self-start" (click)="toggleSidebarB()">
         <i class="fa-solid fa-xmark fa-lg" style="color: #a7aebc;"></i>
       </div>
-      <h2 class="self-start ml-[135px] md:ml-20 mt-20 mb-4 text-[#171717] font-semibold tracking-[3.6px]">SELECCIONA LOS CONVOCADOS</h2>
-      <div class="contenedor-carga w-[529px] h-[330px] border border-dashed border-2 bg-[url(./img/cloud.png)] bg-[center_top_3.5rem] bg-no-repeat bg-[length:80px_80px] flex justify-center items-center bg-[#f8f8f8]">
-        <p class="font-semibold mt-12">Guardar Pregunta</p>
+      <h2 class="self-start ml-[45px] md:ml-20 mt-10 mb-4 text-[#171717] font-semibold tracking-[3.6px]">ORDEN DEL DÍA</h2>
+      <div class="contenedor-lista w-full flex h-[75%] overflow-hidden overflow-y-scroll">
+        <div class="left w-1/12 text-right pr-[12px] pt-1">
+          <i class="fa-solid fa-up-down" style="color: #636363;"></i>
+        </div>
+        <div class="right w-11/12 pl-[5px] mr-[50px]">
+          <ol>
+            <li class="text-[23px] font-light">1. Verificación del QUORUM</li>
+            <li class="text-[23px] font-light mt-8">2. De elecciones y Escrutinios
+              <p class="text-[14px] text-[#888888] ml-[25px] mt-3">La administración propone a la honorable asamblea la comisión de elecciones y escrutinios a los Doctores Gustavo Cano y Felipe Rojas. Se solicita amablemente emitan el voto de aprobación o no aprobación a través de la plataforma virtual.</p>
+              <div class="flex ml-[25px] mt-1 gap-[10px]">
+                <p class="text-[12px]"><i class="fa-solid fa-comment-slash" style="color: #c2c2c2;"></i></p>
+                <p class="text-[12px]">Sin respuesta</p>
+              </div>
+            </li>
+            <li class="text-[23px] font-light mt-8">3. Instalación de la Asamblea a cargo del Presidente de la Junta Directiva:
+              <p class="text-[14px] text-[#888888] ml-[25px] mt-3">El Dr. Jorge Alberto Villegas Ospina (presidente Junta Direciva) declara instalada la Asamblea General Ordinaria de Accionistas de GCmutual. Se solicita muy amablemente emitan el voto de aprobación mediante votación en la plataforma.</p>
+              <div class="flex ml-[25px] mt-1 gap-[10px]">
+                <p class="text-[12px]"><i class="fa-solid fa-hand" style="color: #c2c2c2;"></i></p>
+                <p class="text-[12px]">Votación</p>
+              </div>
+              <div class="ml-[25px]">
+                <p class="text-[12px] my-3 font-semibold">Opciones</p>
+                <ol class="text-[#888888] text-[16px]">
+                  <li>a. Jorge Alberto Villegas Ospina</li>
+                  <li>b. Andrés Ospina Alvaréz</li>
+                  <li>c. Edwin Morales Cardona</li>
+                  <li>d. Tatiana Serna González</li>
+                </ol>
+              </div>
+            </li>
+            <li class="text-[23px] font-light mt-8">4. Elección e instalación de la mesa directiva para la Asamblea (Presidente)
+              <p class="text-[14px] text-[#888888] ml-[25px] mt-3">La administración propone a la honorable asamblea la comisión de elecciones y escrutinios a los Doctores Gustavo Cano y Felipe Rojas. Se solicita amablemente emitan el voto de aprobación o no aprobación a través de la plataforma virtual.</p>
+              <div class="flex ml-[25px] mt-1 gap-[10px]">
+                <p class="text-[12px]"><i class="fa-solid fa-check-to-slot" style="color: #c2c2c2;"></i></p>
+                <p class="text-[12px]">Elección</p>
+              </div>
+            </li>
+            <li class="text-[23px] font-light mt-8">5. Escribe una nueva pregunta
+              <ol class="text-[23px] text-[#888888] ml-[25px] mt-3"><li>5.1 Escribe una sub-pregunta</li></ol>
+              <div class="ml-[25px] mt-1">
+                <p class="text-[12px] font-semibold">Opciones</p>
+                <p class="text-[16px] my-1">5.1 Agrega un opción</p>
+              </div>
+            </li>
+          </ol>
+        </div>
       </div>
+      <!-- btn emitir votación -->
+      <div id="btnGuardar" class="flex justify-start mb-6 tablet:mb-6 w-full pl-[60px] pt-[20px]">
+        <button
+          class="rounded-md bg-[#16151E] w-[289px] h-[55px] flex justify-center items-center gap-4 mx-2 mt-4 laptop:my-6"
+          type="submit">
+          <p class="text-white">Guardar</p>
+        </button>
+      </div>
+
     </div>
 </div>
   

@@ -11,14 +11,12 @@ export class ComunicacionServicio {
   toggleSidebar() {
     const currentValue = this.mostrarSidebarSource.value
     this.mostrarSidebarSource.next(!currentValue);
-    console.log("Entro en servicios");
     
   }
   toggleSidebarB() {
     const currentValue = this.mostrarSidebarSource.value
-    this.mostrarSidebarSource.next(!currentValue);
-    console.log("Entro en servicios");
-    
+    this.mostrarSidebarSource.next(!currentValue);  
   }
-  
+
+   
 }

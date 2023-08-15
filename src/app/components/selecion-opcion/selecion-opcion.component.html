@@ -1,12 +1,14 @@
-<div class="seleccion flex justify-between border-2 border-[#F2F2F2] hover:border-2 hover:border-[#85754E] shadow-[0px_3px_20px_#194B7014] rounded-md p-5 mt-2">
-  <div class="flex items-center justify-around check" >
-    <i class="fa-sharp fa-check"></i>
-    <p class="ml-4">opción 1</p>
-  </div>
-  <div class="flex gap-4 movil:gap-1">
-    <p>10 votos (5%)</p>
-    <circulo-progreso/>
-    <!--  -->
+<div class="grid grid-rows-4 grid-flow-col gap-4">
+  <div *ngFor="let op of opciones" class="seleccion flex justify-between border-2 border-[#F2F2F2] hover:border-2 hover:border-[#85754E] shadow-[0px_3px_20px_#194B7014] rounded-md p-5 mt-2">
+    <div class="flex items-center justify-around check" >
+      <i class="fa-sharp fa-check"></i>
+      <p class="ml-4">{{op.opcion}}</p>
+    </div>
+    <div class="flex gap-4 movil:gap-1">
+      <p>{{op.voto}} votos ({{op.porcentaje}})</p>
+      <circulo-progreso/>
+      <!--  -->
+    </div>
   </div>
 </div>
 

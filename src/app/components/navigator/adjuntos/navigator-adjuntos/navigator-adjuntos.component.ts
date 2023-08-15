@@ -13,7 +13,13 @@ export class NavigatorAdjuntosComponent /* implements OnInit */{
     private comunicacionServicio: ComunicacionServicio
     ) {}
 
-   /*  ngOnInit(): void {} */
+  files= [
+    {name: 'Orden del dia 1.pdf'},
+    {name: 'Orden del dia 2.pdf'},
+    {name: 'Orden del dia 3.pdf'},
+    {name: 'Orden del dia 4.pdf'},
+    {name: 'Orden del dia 5.pdf'},
+  ]
 
     toggleSidebar() {
       this.comunicacionServicio.toggleSidebar();   

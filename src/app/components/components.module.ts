@@ -26,6 +26,8 @@ import { CargarArchivosComponent } from './cargar-archivos/cargar-archivos.compo
 import { ArchivosComponent } from './archivos/archivos.component';
 import { PreguntasComponent } from './navigator/preguntas/preguntas.component';
 import { AgregarPreguntaComponent } from './agregar-pregunta/agregar-pregunta.component';
+import { NavigatorEscrutiniosComponent } from './navigator/adjuntos/navigator-escrutinios/navigator-escrutinios.component';
+
 
 
 
@@ -48,6 +50,8 @@ import { AgregarPreguntaComponent } from './agregar-pregunta/agregar-pregunta.co
     ArchivosComponent,
     PreguntasComponent,
     AgregarPreguntaComponent,
+    NavigatorEscrutiniosComponent
+
 
   ],
   imports: [
@@ -75,6 +79,7 @@ import { AgregarPreguntaComponent } from './agregar-pregunta/agregar-pregunta.co
     BuscadorAgregarPersonasComponent,
     ResaltadoBuscadorDirective,
     AgregarPreguntaComponent,
+
   ]
 })
 export class ComponentsModule { }
