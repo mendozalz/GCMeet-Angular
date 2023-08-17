@@ -1,6 +1,7 @@
 /**SideBar**/
 .mat-drawer:not(.mat-drawer-side) {
 	width: 40%;
+	position: fixed;
 }
 
 .example-container {

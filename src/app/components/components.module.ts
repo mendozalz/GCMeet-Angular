@@ -4,9 +4,8 @@ import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progr
 import { CirculoprogresoNavbarModule } from './progress/circuloprogreso-navbar/circuloprogreso-navbar.module';
 import { HorizontalProgressBarModule } from './progress/horizontal-progress-bar/horizontal-progress-bar.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { SidebarRightComponent } from './sidebar-right/sidebar-right.component';
 import { SidebarDesktopComponent } from './sidebar-desktop/sidebar-desktop.component';
-import { SidenavModeExample } from './side-bar/side-bar.component';
+import { SidenavModeExample } from './side-bar-movil/side-bar.component';
 import { SelecionOpcionComponent } from './selecion-opcion/selecion-opcion.component';
 import { NavigatorAdjuntosComponent } from './navigator/adjuntos/navigator-adjuntos/navigator-adjuntos.component';
 import { NavigatorProgramacionComponent } from './navigator/programacion/navigator-programacion/navigator-programacion.component';
@@ -35,6 +34,7 @@ import { OpcionesPreguntasComponentIquierda } from './navigator/preguntas2/opcio
 import { CargarArchivosWidgetComponent } from './cargar-archivos-widget/cargar-archivos-widget.component';
 import { NgToggleModule } from 'ng-toggle-button';
 import { OpcionesPreguntasDerechaComponent } from './navigator/preguntas2/opciones-preguntas-derecha/opciones-preguntas-derecha.component';
+import { SidebarRightComponent } from './sidebar-right-movil/sidebar-right.component';
 
 
 

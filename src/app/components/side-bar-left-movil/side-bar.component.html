@@ -1,4 +1,4 @@
-<mat-sidenav-container class="example-container" [ngClass]="{'example-container': estiloActivo, 'container': !estiloActivo}">
+<mat-sidenav-container class="side-bar-left-movil example-container" [ngClass]="{'example-container': estiloActivo, 'container': !estiloActivo}">
   <mat-sidenav #sidenav [mode]="mode.value || 'over'">
     <aside
       class="w-full h-full bg-[#16151E] flex flex-col items-center pt-5 pb-2 space-y-7 text-white"
@@ -7,7 +7,7 @@
         <p>GC</p>
       </div>
       <div id="quorum" class="text-[11px]">
-        <p class="text-center">QUORUM</p>
+        <p class="text-center mb-8">QUORUM+</p>
         <div>
           <circuloprogreso-navbar/>
         </div>
@@ -20,7 +20,7 @@
   
   <mat-sidenav-content>
     <button [ngStyle]="styleBtn" (click)="visible(); sidenav.toggle()">
-        <i class="fa-solid fa-bars fa-2xl" style="color: #1C212C;"></i>
+        <i class="fa-solid fa-bars fa-2xl" style="color: #16151E;"></i>
     </button>
   </mat-sidenav-content>
 </mat-sidenav-container>

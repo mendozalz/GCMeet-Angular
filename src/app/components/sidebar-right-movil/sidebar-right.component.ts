@@ -3,7 +3,7 @@ import {FormControl} from '@angular/forms';
 import {MatDrawerMode} from '@angular/material/sidenav';
 
 @Component({
-  selector: 'sidebar-right',
+  selector: 'sidebar-right-movil',
   templateUrl: './sidebar-right.component.html',
   styleUrls: ['./sidebar-right.component.css']
 })

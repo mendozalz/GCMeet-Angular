@@ -1,4 +1,4 @@
-<mat-sidenav-container class="example-containerR md:hidden"
+<mat-sidenav-container class="side-bar-right-movil example-containerR movil:hidden"
   [ngClass]="{'example-container': estiloActivoR, 'container': !estiloActivoR}">
   <mat-sidenav #sidenav [mode]="mode.value || 'over'" position="end">
     <div class="px-4 w-full h-screen bg-[#F5F5F5]">
@@ -42,20 +42,7 @@
         </div>
       </div>
       <!-- Icono Opciones -->
-      <div class="flex justify-center gap-x-2 mt-4">
-        <div class="rounded-lg movil:w-[97px] w-full h-[46px] bg-[#85754E] flex justify-center items-center">
-          <i class="fa-solid fa-users fa-lg" style="color: #ffffff"></i>
-        </div>
-        <div class="rounded-lg movil:w-[97px] w-full h-[46px] bg-white flex justify-center items-center">
-          <i class="fa-solid fa-bars fa-lg" style="color: #000000"></i>
-        </div>
-        <div class="rounded-lg movil:w-[97px] w-full h-[46px] bg-white flex justify-center items-center">
-          <i class="fa-solid fa-file-lines fa-lg" style="color: #000000"></i>
-        </div>
-        <div class="rounded-lg movil:w-[97px] w-full h-[46px] bg-[#F93245] flex justify-center items-center">
-          <i class="fa-solid fa-power-off fa-lg" style="color: #ffffff"></i>
-        </div>
-      </div>
+      <navigator-iconos></navigator-iconos>
       <!-- Selección Asistentes en modo movil -->
       <div class="mt-4">
         <h4 class="text-[#545454] font-bold">Asistentes</h4>
@@ -93,7 +80,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button (click)="visibleR(); sidenav.toggle()" class="btn-right-movil min-tablet:hidden tablet:pt-4">
+    <button (click)="visibleR(); sidenav.toggle()" class="btn-right-movil min-tablet:hidden tablet:pt-4 fixed">
       <i class="fa-solid fa-caret-left fa-2xl"></i>
     </button>
   </mat-sidenav-content>
