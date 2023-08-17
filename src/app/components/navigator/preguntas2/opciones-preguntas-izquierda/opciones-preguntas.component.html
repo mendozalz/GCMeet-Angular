@@ -1,0 +1,105 @@
+<div
+  class="border-2 border-[#CFCFCF] hover:border-2 hover:border-[#85754E] shadow-[0px_3px_20px_#194B7014] rounded-md p-4 mt-2"
+>
+  <input
+    class=""
+    type="text"
+    name="titutlo"
+    id="opciones-preguntas-titulo"
+    value="Titulo"
+  />
+</div>
+<div class="opciones-preguntas2">
+  <div
+    *ngFor="let op of opciones2"
+    class="seleccion flex justify-between border-2 border-[#CFCFCF] hover:border-2 hover:border-[#85754E] shadow-[0px_3px_20px_#194B7014] rounded-md p-3 mt-2"
+  >
+    <div class="flex items-center justify-around check">
+      <p>{{ op.opcion }}</p>
+    </div>
+    <div class="flex gap-4 movil:gap-1">
+      <i class="fa-solid fa-angle-down mt-1" style="color: #545454"></i>
+      <!--  -->
+    </div>
+  </div>
+</div>
+<div class="h-[150px] mt-2"><cargar-archivos-widget /></div>
+<div
+  class="border-2 border-[#CFCFCF] shadow-[0px_3px_20px_#194B7014] rounded-md p-5 mt-3 h-full"
+>
+  <div class="opciones-preguntas2.1">
+    <div
+      *ngFor="let op of opciones3"
+      class="seleccion flex justify-between border-2 border-[#CFCFCF] hover:border-2 hover:border-[#85754E] shadow-[0px_3px_20px_#194B7014] rounded-md p-3 mt-2"
+    >
+      <div class="flex items-center justify-around check">
+        <p>{{ op.opcion }}</p>
+      </div>
+      <div class="flex gap-4 movil:gap-1">
+        <i class="fa-solid fa-angle-down mt-1" style="color: #545454"></i>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-between gap-4">
+    <div
+      class="border-2 border-[#CFCFCF] shadow-[0px_3px_20px_#194B7014] rounded-md p-2 mt-2 flex justify-start items-center gap-3 w-full"
+    >
+      <ng-toggle
+        [value]="true"
+        [width]="40"
+        [height]="20"
+        [margin]="1"
+        [color]="{
+          unchecked: '#e0e0e0',
+          checked: '#e0e0e0',
+        }"
+        [switchColor]="{
+          checked: '#85754E',
+          unchecked: '#000000',
+          disabled: '#ffffff'
+        }"
+      ></ng-toggle>
+      <p class="text-[12px]">¿Requiere acta?</p>
+    </div>
+    <div
+      class="border-2 border-[#CFCFCF] shadow-[0px_3px_20px_#194B7014] rounded-md p-2 mt-2 flex justify-start items-center gap-3 w-full"
+    >
+      <ng-toggle
+        [value]="true"
+        [width]="40"
+        [height]="20"
+        [margin]="1"
+        [color]="{
+          unchecked: '#e0e0e0',
+          checked: '#e0e0e0',
+        }"
+        [switchColor]="{
+          checked: '#85754E',
+          unchecked: '#000000',
+          disabled: '#ffffff'
+        }"
+      ></ng-toggle>
+      <p class="text-[12px]">¿Firma acta?</p>
+    </div>
+  </div>
+  <div
+    class="border-2 border-[#CFCFCF] hover:border-2 hover:border-[#85754E] shadow-[0px_3px_20px_#194B7014] rounded-md p-3 mt-2 relative"
+  >
+    <input
+      class="pl-12"
+      type="text"
+      name="titutlo"
+      id="opciones-preguntas-titulo"
+      value="Agregar recurso"
+    />
+    <i
+      class="fa-solid fa-magnifying-glass fa-lg absolute left-4 top-[33%]"
+      style="color: #cfcfcf"
+    ></i>
+  </div>
+  <div class="seleccionados border-b-2 border-[#CBCBCB] p-3 mt-2" *ngFor="let i of seleccionados">
+    <i class="pr-2" [ngClass]="[i.i]" [style.color]="i.color"></i>
+    {{i.name}}
+  </div>
+</div>

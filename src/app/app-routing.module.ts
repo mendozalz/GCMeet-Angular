@@ -3,7 +3,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { NavigatorAsistentesComponent } from "./components/navigator/asistentes/navigator-asistentes.component";
 import { NavigatorAdjuntosComponent } from "./components/navigator/adjuntos/navigator-adjuntos/navigator-adjuntos.component";
 import { NavigatorProgramacionComponent } from "./components/navigator/programacion/navigator-programacion/navigator-programacion.component";
-import { NavigatorEscrutiniosComponent } from "./components/navigator/adjuntos/navigator-escrutinios/navigator-escrutinios.component";
 
 const routes: Routes =[
     {

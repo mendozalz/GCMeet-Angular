@@ -1,0 +1,27 @@
+<div class="opciones-preguntas">
+    <div
+      class="seleccionados border-b-2 border-[#CBCBCB] p-3 mt-2 border-2 border-[#F2F2F2] shadow-[0px_3px_20px_#194B7014] rounded-md"
+      *ngFor="let i of opciones"
+    >
+      <i class="pr-2" [ngClass]="[i.i]" [style.color]="i.color"></i>
+      {{ i.name }}
+    </div>
+    <div class="opciones-sub-preguntas w-[90%] ml-auto">
+        <div
+      class="seleccionados border-b-2 border-[#CBCBCB] p-3 mt-2 border-2 border-[#F2F2F2] shadow-[0px_3px_20px_#194B7014] rounded-md"
+      *ngFor="let i of subOpciones"
+    >
+      <i class="pr-2" [ngClass]="[i.i]" [style.color]="i.color"></i>
+      {{ i.name }}
+    </div>
+    <div class="opciones-sub-orden w-[90%] ml-auto">
+        <div
+      class="seleccionados border-b-2 border-[#CBCBCB] p-3 mt-2 border-2 border-[#F2F2F2] shadow-[0px_3px_20px_#194B7014] rounded-md"
+      *ngFor="let i of subOrden"
+    >
+      <i class="pr-2" [ngClass]="[i.i]" [style.color]="i.color"></i>
+      {{ i.name }}
+    </div>
+    </div>
+    </div>
+</div>

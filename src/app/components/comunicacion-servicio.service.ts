@@ -17,6 +17,10 @@ export class ComunicacionServicio {
     const currentValue = this.mostrarSidebarSource.value
     this.mostrarSidebarSource.next(!currentValue);  
   }
+  toggleSidebarC() {
+    const currentValue = this.mostrarSidebarSource.value
+    this.mostrarSidebarSource.next(!currentValue);  
+  }
 
    
 }

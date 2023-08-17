@@ -43,5 +43,10 @@ export class VerticalProgressComponent {
     console.log("click btn preguntas");
     
   }
+  toggleSidebarC() {
+    this.comunicacionServicio.toggleSidebarB();    
+    console.log("click btn preguntas");
+    
+  }
 
 }

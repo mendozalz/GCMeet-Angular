@@ -1,0 +1,67 @@
+.multigraph {
+    width: 25%;
+    height: 120px;
+    transform: scale(.8);  
+  }
+  .multigraph:before {
+    content: '';
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    border: 30px solid rgba(0,0,0,0.1);
+    border-radius: 300px 300px 0 0;
+    border-bottom: none;
+  }
+  .tooltip {
+    font-weight: 400;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+    transform: scale(.1);
+  }
+  
+   .multigraph .tooltip {
+    bottom: -20%;
+    opacity: .8;
+    transform: scale(2);
+  }
+  .graph {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    overflow:hidden;
+  
+  }
+  .graph:before, .graph:after {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 100%;
+    border: 30px solid #44A18F;
+    content: '';
+    border-radius:0 0 300px 300px;
+    border-top: none;
+    animation: demo 3s;
+    stroke-linecap: round;
+    transform-origin: center top;
+  }
+  .graph:after {
+    transform: rotate(130deg);
+  }
+  
+  @keyframes demo {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+  }
+
+  /* svg */
+
+  svg.aprobar{
+    fill: #44a48f;
+  }
+
+  svg.rechazar{
+    fill: #f93245
+  }

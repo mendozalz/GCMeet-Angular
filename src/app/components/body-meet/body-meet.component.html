@@ -1,0 +1,54 @@
+<!-- Pregunta -->
+<div id="pregunta" class="mt-[52px] space-y-[12px]">
+  <p class="text-[32px] movil:text-[22px]">1. De elecciones y Escrutinios</p>
+  <p
+    class="text-[#888888] text-[15px] movil:text-[12px] movil:text-center movil:text-justify"
+  >
+    La administración propone a la honorable asamblea la comisión de elecciones
+    y escrutinios a los Doctores
+    <span class="font-bold">Felipe Rojas Toro</span> y
+    <span class="font-bold">Gustavo Cano</span> se solicita amablemente emitan
+    el voto de aprobación o no aprobación a través de la plataforma virtual.
+  </p>
+</div>
+<!--  -->
+<!-- Selecciona una opción -->
+<div id="opciones" class="flex justify-between mt-[66px] font-bold movil:block">
+  <p class="movil:text-[14px]">Selecciona una opción</p>
+  <div class="space-y-1.5 w-[536px] movil:w-full movil:mt-2">
+    <p class="text-xs text-[#CFCFCF] text-right uppercase">
+      Total de votaciones
+    </p>
+    <div class="flex justify-end items-center w-full">
+      <mat-progress-bar
+        class="rounded-md"
+        mode="determinate"
+        [value]="hotizontalProgress"
+      ></mat-progress-bar>
+      <horizontal-progress-bar />
+      <p class="text-black text-xs font-bold ml-2">{{ hotizontalProgress }}%</p>
+    </div>
+  </div>
+</div>
+<!--  -->
+<!-- Opciones -->
+<div class="flex justify-between">
+  <!-- Col Izq|Der Votaciones-->
+  <div
+    id="columnaIzquierdaVotaciones"
+    class="w-full mt-6 font-medium movil:block"
+  >
+    <selecion-opcion />
+  </div>
+</div>
+<!--  -->
+<!-- btn emitir votación -->
+<div id="btnVotacion" class="flex justify-start mb-6 tablet:mb-6">
+  <button
+    class="rounded-md bg-[#16151E] w-[289px] h-[55px] flex justify-center items-center gap-4 mx-2 mt-4 laptop:my-6"
+    type="submit"
+  >
+    <p class="text-white">Emitir votación</p>
+  </button>
+</div>
+<!--  -->

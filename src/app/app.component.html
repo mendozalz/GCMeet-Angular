@@ -4,11 +4,19 @@
   <sidebar-desktop class="tablet:hidden" />
   <div class="w-full movil:pt-8">
     <!-- Columna Central y Columna de Asistentes -->
-    <div id="colmnaCentralAsistentes" class="columnaCentralYzonaAsistentes flex w-auto">
+    <div
+      id="colmnaCentralAsistentes"
+      class="columnaCentralYzonaAsistentes flex w-auto"
+    >
       <!-- Columna Central -->
-      <div id="columnaCentral" class="w-full px-[58px] pt-[61px] laptop:px-[40px] tablet:px-[20px] movil:pt-[25px]">
+      <div
+        id="columnaCentral"
+        class="w-full px-[58px] pt-[61px] laptop:px-[40px] tablet:px-[20px] movil:pt-[25px]"
+      >
         <!-- Hero -->
-        <div class="h-[97px] w-full bg-[#FBFBFB] border-2 border-[#CFCFCF] rounded-md flex justify-between p-[20px]">
+        <div
+          class="h-[97px] w-full bg-[#FBFBFB] border-2 border-[#CFCFCF] rounded-md flex justify-between p-[20px]"
+        >
           <div class="text-[#545454] text-[17px] movil:text-[12px]">
             <p class="font-bold">ASAMBLEA GENERAL DE ACCIONISTAS</p>
             <p class="movil:text-[10px]">Garantías comunitarias</p>
@@ -17,86 +25,63 @@
             <p>Logo GC</p>
           </div>
         </div>
-        <!-- Pregunta -->
-        <div id="pregunta" class="mt-[52px] space-y-[12px]">
-          <p class="text-[32px] movil:text-[22px]">1. De elecciones y Escrutinios</p>
-          <p class="text-[#888888] text-[15px] movil:text-[12px] movil:text-center movil:text-justify">
-            La administración propone a la honorable asamblea la comisión de
-            elecciones y escrutinios a los Doctores
-            <span class="font-bold">Felipe Rojas Toro</span> y
-            <span class="font-bold">Gustavo Cano</span> se solicita amablemente
-            emitan el voto de aprobación o no aprobación a través de la
-            plataforma virtual.
-          </p>
-        </div>
-        <!-- Selecciona una opción -->
-        <div id="opciones" class="flex justify-between mt-[66px] font-bold movil:block">
-          <p class="movil:text-[14px]">Selecciona una opción</p>
-          <div class="space-y-1.5 w-[536px] movil:w-full movil:mt-2">
-            <p class="text-xs text-[#CFCFCF] text-right uppercase">
-              Total de votaciones
-            </p>
-            <div class="flex justify-end items-center w-full">
-              <mat-progress-bar class="rounded-md" mode="determinate" [value]="hotizontalProgress"></mat-progress-bar>
-              <horizontal-progress-bar />
-              <p class="text-black text-xs font-bold ml-2">{{hotizontalProgress}}%</p>
-            </div>
-          </div>
-        </div>
-        <!-- Opciones -->
-        <div class="flex justify-between">
-          <!-- Col Izq|Der Votaciones-->
-          <div id="columnaIzquierdaVotaciones" class="w-full mt-6 font-medium movil:block">
-            <selecion-opcion/>
-          </div>
-        </div>
-        <!-- btn emitir votación -->
-        <div id="btnVotacion" class="flex justify-start mb-6 tablet:mb-6">
-          <button
-            class="rounded-md bg-[#16151E] w-[289px] h-[55px] flex justify-center items-center gap-4 mx-2 mt-4 laptop:my-6"
-            type="submit">
-            <p class="text-white">Emitir votación</p>
-          </button>
-        </div>
+        <!-- BodyMeet -->
+       <!-- <body-meet></body-meet> -->
+
+       <!-- BodyDashBoard -->
+       <body-dash-board></body-dash-board>
+
       </div>
       <!-- Columna Asistentes -->
-      
-      <sidebar-right id="sideBarRight" class="-ml-6 movil:-mt-8"/>
-      <div class="px-8 w-[535px] laptop:w-[435px] h-[auto] bg-[#F5F5F5] tablet:hidden relative">
+
+      <sidebar-right id="sideBarRight" class="-ml-6 movil:-mt-8" />
+      <div
+        class="px-8 w-[535px] laptop:w-[435px] h-[auto] bg-[#F5F5F5] tablet:hidden relative"
+      >
         <!-- Fotos Perfil -->
         <div id="fotosPerfiles" class="mt-14">
           <div class="flex">
             <div class="w-full h-full">
               <img
-                class="w-[125px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-tl-xl bg-cover bg-no-repeat bg-center" />
-            </div>
-            <div class="w-full h-full">
-              <img class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-cover bg-no-repeat bg-center" />
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-tl-xl bg-cover bg-no-repeat bg-center"
+              />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] laptop:rounded-tr-xl bg-cover bg-no-repeat bg-center" />
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] bg-cover bg-no-repeat bg-center"
+              />
+            </div>
+            <div class="w-full h-full">
+              <img
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] laptop:rounded-tr-xl bg-cover bg-no-repeat bg-center"
+              />
             </div>
             <div class="w-full h-full laptop:hidden">
               <img
-                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-tr-xl bg-cover bg-no-repeat bg-center" />
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-tr-xl bg-cover bg-no-repeat bg-center"
+              />
             </div>
           </div>
           <div class="flex">
             <div class="w-full h-full">
               <img
-                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-bl-xl bg-cover bg-no-repeat bg-center" />
-            </div>
-            <div class="w-full h-full">
-              <img class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-cover bg-no-repeat bg-center" />
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-2-322.jpg)] rounded-bl-xl bg-cover bg-no-repeat bg-center"
+              />
             </div>
             <div class="w-full h-full">
               <img
-                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] laptop:rounded-br-xl bg-cover bg-no-repeat bg-center" />
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-3-320.jpg)] bg-cover bg-no-repeat bg-center"
+              />
+            </div>
+            <div class="w-full h-full">
+              <img
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-photo-320.jpg)] laptop:rounded-br-xl bg-cover bg-no-repeat bg-center"
+              />
             </div>
             <div class="w-full h-full laptop:hidden">
               <img
-                class="w-[125px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-br-xl bg-cover bg-no-repeat bg-center" />
+                class="w-[125px] h-[128px] bg-[url(./img/pexels-andrea-320.jpg)] rounded-br-xl bg-cover bg-no-repeat bg-center"
+              />
             </div>
           </div>
         </div>
@@ -113,7 +98,8 @@
     <div class="w-full h-auto bg-white border border-[#CFCFCF] pb-4">
       <div>
         <div
-          class="border w-[341px] h-[45px] text-[13px] flex justify-center items-center ml-[230px] mt-[-10px] bg-white rounded-md border-[#CFCFCF] movil:w-full movil:m-0">
+          class="border w-[341px] h-[45px] text-[13px] flex justify-center items-center ml-[230px] mt-[-10px] bg-white rounded-md border-[#CFCFCF] movil:w-full movil:m-0"
+        >
           <p class="text-[#545454]">
             Tienes preguntas pendientes por contestar.
           </p>
@@ -127,43 +113,78 @@
       <div class="flex justify-center mt-2 movil:mt-4">
         <!-- btn Anteior -->
         <div class="w-[80%] laptop:w-[95%] flex justify-between">
-          <button class="flex justify-center items-center border border-[#CFCFCf] w-[110px] h-[38px] gap-2 rounded-md">
-            <i class="fa-solid fa-chevron-left text-[12px]" style="color: #cfcfcf"></i>
+          <button
+            class="flex justify-center items-center border border-[#CFCFCf] w-[110px] h-[38px] gap-2 rounded-md"
+          >
+            <i
+              class="fa-solid fa-chevron-left text-[12px]"
+              style="color: #cfcfcf"
+            ></i>
             <p class="text-[12px] text-[#CFCFCF] font-medium">Anterior</p>
             <div class="relative movil:hidden">
               <!-- led ping -->
               <span class="flex h-2 w-2">
                 <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#44A18F] opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#44A18F]"></span>
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#44A18F] opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-[#44A18F]"
+                ></span>
               </span>
             </div>
           </button>
           <!-- Lines de tiempo -->
           <div class="flex items-center gap-2 tablet:hidden">
-            <hr class="border-2 border-[#85754E] w-[138px] laptop:w-[105px] rounded-md" />
-            <hr class="border-2 border-[#85754E] w-[138px] laptop:w-[105px] rounded-md" />
-            <hr class="border-2 border-[#E8C2C5] w-[138px] laptop:w-[105px] rounded-md" />
-            <hr class="border-2 border-[#E8C2C5] w-[138px] laptop:w-[105px] rounded-md" />
+            <hr
+              class="border-2 border-[#85754E] w-[138px] laptop:w-[105px] rounded-md"
+            />
+            <hr
+              class="border-2 border-[#85754E] w-[138px] laptop:w-[105px] rounded-md"
+            />
+            <hr
+              class="border-2 border-[#E8C2C5] w-[138px] laptop:w-[105px] rounded-md"
+            />
+            <hr
+              class="border-2 border-[#E8C2C5] w-[138px] laptop:w-[105px] rounded-md"
+            />
             <!-- Icon Plus -->
-            <i class="fa-solid fa-circle-plus fa-2xl" style="color: #857526"></i>
+            <i
+              class="fa-solid fa-circle-plus fa-2xl"
+              style="color: #857526"
+            ></i>
 
-            <hr class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md" />
-            <hr class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md" />
-            <hr class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md" />
-            <hr class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md" />
+            <hr
+              class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md"
+            />
+            <hr
+              class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md"
+            />
+            <hr
+              class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md"
+            />
+            <hr
+              class="border-2 border-[#CFCFCF] w-[138px] laptop:w-[105px] rounded-md"
+            />
           </div>
           <!-- btn Siguiente -->
-          <button class="flex justify-center items-center border border-[#CFCFCf] w-[110px] h-[38px] gap-2 rounded-md">
+          <button
+            class="flex justify-center items-center border border-[#CFCFCf] w-[110px] h-[38px] gap-2 rounded-md"
+          >
             <p class="text-[12px] text-[#CFCFCF] font-medium">Siguiente</p>
-            <i class="fa-solid fa-chevron-right text-[12px]" style="color: #cfcfcf"></i>
+            <i
+              class="fa-solid fa-chevron-right text-[12px]"
+              style="color: #cfcfcf"
+            ></i>
           </button>
         </div>
       </div>
       <!-- Agregar pregunta -->
-      <div class="flex justify-center -ml-[24%] laptop:-ml-[35%] -mt-[10px] laptop:-mt-[8px] movil:m-0 movil:mt-4">
+      <div
+        class="flex justify-center -ml-[24%] laptop:-ml-[35%] -mt-[10px] laptop:-mt-[8px] movil:m-0 movil:mt-4"
+      >
         <div
-          class="border w-[189px] h-[33px] text-[13px] flex justify-center items-center ml-[230px] movil:ml-[140px] movil:mt-4 bg-white rounded-md border-[#CFCFCF]">
+          class="border w-[189px] h-[33px] text-[13px] flex justify-center items-center ml-[230px] movil:ml-[140px] movil:mt-4 bg-white rounded-md border-[#CFCFCF]"
+        >
           <p class="text-[#545454]">Agregar pregunta</p>
         </div>
       </div>
