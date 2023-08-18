@@ -4,8 +4,8 @@ import { CirculoProgresoModule } from './progress/circulo-progreso/circulo-progr
 import { CirculoprogresoNavbarModule } from './progress/circuloprogreso-navbar/circuloprogreso-navbar.module';
 import { HorizontalProgressBarModule } from './progress/horizontal-progress-bar/horizontal-progress-bar.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { SidebarDesktopComponent } from './sidebar-desktop/sidebar-desktop.component';
-import { SidenavModeExample } from './side-bar-movil/side-bar.component';
+import { SidebarDesktopComponent } from './sidebar-left-desktop/sidebar-desktop.component';
+import { SidenavModeExample } from './side-bar-left-movil/side-bar.component';
 import { SelecionOpcionComponent } from './selecion-opcion/selecion-opcion.component';
 import { NavigatorAdjuntosComponent } from './navigator/adjuntos/navigator-adjuntos/navigator-adjuntos.component';
 import { NavigatorProgramacionComponent } from './navigator/programacion/navigator-programacion/navigator-programacion.component';

@@ -25,11 +25,16 @@
             <p>Logo GC</p>
           </div>
         </div>
+         
+        <!-- BodyDashBoard -->
+        <ng-container *ngIf="getRute() == '/adjuntos'; else asistentes">
+          <body-dash-board></body-dash-board>
+        </ng-container>
+        
         <!-- BodyMeet -->
-       <!-- <body-meet></body-meet> -->
-
-       <!-- BodyDashBoard -->
-       <body-dash-board></body-dash-board>
+       <ng-template #asistentes>
+        <body-meet></body-meet>
+       </ng-template>
 
       </div>
       <!-- Columna Asistentes -->
@@ -89,7 +94,7 @@
         <navigator-iconos></navigator-iconos>
         <!-- ************ -->
 
-        <router-outlet id="navigatorAsistentes"></router-outlet>
+        <router-outlet ></router-outlet>
         <!-- -********- -->
       </div>
     </div>
