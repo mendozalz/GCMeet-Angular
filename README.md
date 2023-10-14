@@ -1,27 +1,43 @@
-# GCMeetAngular
+# Angular Meet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Proyecto para un meet personalizado con Angular v16
 
-## Development server
+<p align="center">
+  <img src="src\img\GCMeetAngular.gif" alt="Lección #7" />
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ver en [Netlify](https://gc-meet.netlify.app/asistentes)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+Solo debes copiar el repositorio tal como muestra la imagen
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p align="center">
+  <img src="https://i.ibb.co/CPp0nX5/copiar-repo.gif" alt="Lección #6" />
+</p>
 
-## Running unit tests
+luego ve a la terminal y haz un git clone tal como muestra la imagen
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+<p align="center">
+  <img src="https://i.ibb.co/Z63C7mf/clonar-repo-1.gif" alt="Lección #6" />
+</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ingresas a la carpeta descargada (clonada) y ejecutas el siguiente codigo
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Luego de terminar la instalación el comando predeterminado para desplegar en este caso es :
+
+```bash
+npm star
+```
+
+El cual se auto despliega.
+
+## Happy Coding
+
+Sientete libre de hacer los cambios que creas pertinentes.
