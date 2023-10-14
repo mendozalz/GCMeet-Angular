@@ -6,7 +6,7 @@ Proyecto para un meet personalizado con Angular v16
   <img src="src\img\GCMeetAngular.gif" alt="Lección #7" />
 </p>
 
-Ver en [Netlify](https://gc-meet.netlify.app/asistentes)
+Ver en [Netlify](https://gc-meet.netlify.app/)
 
 
 ## Instalación
